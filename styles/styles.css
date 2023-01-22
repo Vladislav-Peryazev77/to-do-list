@@ -2,14 +2,14 @@
   /* min-width: 1100px; */
   min-width: 375px;
   margin: 0 auto;
-
-  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, sans-serif; */
+  min-height: 730px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
 .header {
   background: linear-gradient(135deg, #3710BD 0%, #A42395 100%);
-  min-height: 200px;
   background-image: url("../images/header-bg1.svg");
+  min-height: 200px;
 }
 
 .header__inner {
@@ -27,6 +27,7 @@
   min-height: 48px;
   background: #25273D;
   margin-top: 40px;
+  margin-bottom: 16px;
   box-shadow: 0px 35px 50px -15px rgba(0, 0, 0, 0.5);
   border-radius: 5px;
   position: relative;
@@ -34,7 +35,7 @@
 .create-new-todo__input-checkbox[type="checkbox"] {
   display: none;
 }
-label::before {
+.create-new-todo__input-checkbox__label::before {
   top: 14px;
   left: 20px;
   position: absolute;
@@ -47,7 +48,7 @@ label::before {
 	transition: 0.5s;
   box-sizing: border-box;
 }
-input[type="checkbox"]:checked + label::before {
+.create-new-todo__input-checkbox[type="checkbox"]:checked + .create-new-todo__input-checkbox__label::before {
 	background-image: url('../images/galo4ka.svg');
 	background-size: 100%;
 }
@@ -62,12 +63,123 @@ input[type="checkbox"]:checked + label::before {
   border: none;
   letter-spacing: -0.166667px;
   position: absolute;
-  color: #767992;
+  color: #4D5067;
   top: 18px;
   left: 52px;
   outline: none;
-
 }
+.main {
+  min-height: 530px;
+  background-color: #171823;
+  position: relative;
+}
+.main__tasks {
+  box-sizing: border-box;
+  min-width: 327px;
+  top: -25px;
+  position: absolute;
+  min-height: 368px;
+  /* padding: 0 20px; */
+  background: #25273D;
+  border-radius: 5px;
+}
+.tasks__task {
+  min-height: 52px;
+  display: flex;
+  border-bottom: solid 1px #393A4B;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+.task__input-checkbox[type="checkbox"] {
+  display: none;
+}
+.input-checkbox[type="checkbox"] {
+  display: none;
+}
+.label::before {
+	content: '';
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: solid 1px #393A4B;
+	transition: 0.5s;
+  box-sizing: border-box;
+}
+.input-checkbox[type="checkbox"]:checked + .label::before {
+	background-image: url('../images/galo4ka.svg');
+	background-size: 100%;
+}
+
+.task__description {
+  margin: 19px 0 0 12px;
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  /* identical to box height */
+  letter-spacing: -0.166667px;
+  /* text-decoration-line: line-through; */
+  color: #4D5067;
+  min-width: 215px;
+}
+.cross1 {
+  /* border: 1px solid #979797; */
+  transform: rotate(-45deg);
+  width: 16px;
+  height: 1px;
+  background: #494C6B;
+  margin: 25px 0 0 27px;
+}
+.cross2 {
+  width: 16px;
+  height: 1px;
+  background: #494C6B;
+  transform: rotate(45deg);
+  margin: -1px 0 0 27px;
+}
+.task__line {
+  height: 1px;
+  background: #393A4B;
+  width: 327px;
+  position: absolute;
+  left: 0;
+}
+.tast__input-checkbox {
+  margin-right: 20px;
+}
+.task__label::before {
+  margin-top: 16px;
+  margin-left: 20px;
+}
+.main_interaction {
+  display: flex;
+}
+.main__amount__description {
+  margin: 16px 0 0 20px;
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  /* identical to box height */
+  letter-spacing: -0.166667px;
+  color: #5B5E7E;
+}
+.main__clear {
+  margin: 16px 0 0 138px;
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  /* identical to box height */
+  letter-spacing: -0.166667px;
+  color: #5B5E7E;
+}
+
+
 
 
 
