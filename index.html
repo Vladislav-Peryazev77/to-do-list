@@ -7,8 +7,15 @@
     <meta name="description" content="Page description">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
-  </head>
-  <body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,300;1,100;1,200&display=swap" rel="stylesheet">  <body>
     <div class="page">
       <header class="header">
         <div class="container">
@@ -24,9 +31,115 @@
               <input type="image" src="images/color-switcher.svg" >
             </div>
           </div>
+          <div class="create-new-todo">
+            <input type="checkbox" id="r1" class="create-new-todo__input-checkbox input-checkbox">
+            <label class="create-new-todo__input-checkbox__label" for="r1">&nbsp;</label>
+            <input type="text" class="create-new-todo__input-text" placeholder="Create a new todo…">
+          </div>
         </div>
-
       </header>
+      <main class="main">
+        <div class="container">
+          <div class="main__tasks">
+            <div class="tasks__task">
+              <input type="checkbox" class="input-checkbox " id="checkbox">
+              <label class="label task__label" for="checkbox">&nbsp;</label>
+              <p class="task__description">
+                Complete online JavaScript course
+              </p>
+              <div class="task__cross-button">
+                  <div class="cross1"></div>
+                  <div class="cross2"></div>
+              </div>
+
+            </div>
+            <div class="tasks__task">
+              <input type="checkbox" class="input-checkbox " id="checkbox2">
+              <label class="label task__label" for="checkbox2">&nbsp;</label>
+              <p class="task__description">
+                Jog around the park 3x
+              </p>
+              <div class="task__cross-button">
+                  <div class="cross1"></div>
+                  <div class="cross2"></div>
+              </div>
+
+            </div>
+            <div class="tasks__task">
+              <input type="checkbox" class="input-checkbox " id="checkbox3">
+              <label class="label task__label" for="checkbox3">&nbsp;</label>
+              <p class="task__description">
+                10 minutes meditation
+              </p>
+              <div class="task__cross-button">
+                  <div class="cross1"></div>
+                  <div class="cross2"></div>
+              </div>
+
+            </div>
+            <div class="tasks__task">
+              <input type="checkbox" class="input-checkbox " id="checkbox4">
+              <label class="label task__label" for="checkbox4">&nbsp;</label>
+              <p class="task__description">
+                Read for 1 hour
+              </p>
+              <div class="task__cross-button">
+                  <div class="cross1"></div>
+                  <div class="cross2"></div>
+              </div>
+
+            </div>
+            <div class="tasks__task">
+              <input type="checkbox" class="input-checkbox " id="checkbox5">
+              <label class="label task__label" for="checkbox5">&nbsp;</label>
+              <p class="task__description">
+                Pick up groceries
+              </p>
+              <div class="task__cross-button">
+                  <div class="cross1"></div>
+                  <div class="cross2"></div>
+              </div>
+
+            </div>
+            <div class="tasks__task">
+              <input type="checkbox" class="input-checkbox " id="checkbox6">
+              <label class="label task__label" for="checkbox6">&nbsp;</label>
+              <p class="task__description">
+                Complete Todo App on Frontend Mentor
+              </p>
+              <div class="task__cross-button">
+                  <div class="cross1"></div>
+                  <div class="cross2"></div>
+              </div>
+            </div>
+            <div class="main_interaction">
+              <div class="main__amount">
+                <p class="main__amount__description">
+                  5 items left
+                </p>
+              </div>
+              <div class="main__clear">Clear Completed</div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div class="footer">
+        <div class="container">
+          <div class="footer__interaction">
+            <div class="interaction__select-all">
+             All
+            </div>
+            <div class="interaction__select-active">
+              Active
+            </div>
+            <div class="interaction__select-completed">
+             Completed
+            </div>
+        </div>
+        <div class="footer__drop-to-reorder">
+          Drag and drop to reorder list
+        </div>
+      </div>
     </div>
   </body>
 </html>
